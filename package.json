@@ -1,0 +1,24 @@
+{
+  "name": "martin-rees-website",
+  "version": "1.0.0",
+  "description": "Modern website for Martin Rees Energy Solutions",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve . -p 3000",
+    "start": "serve . -p 3000",
+    "build": "echo 'No build process needed for static site'",
+    "preview": "serve . -p 3001"
+  },
+  "keywords": [
+    "solar",
+    "battery",
+    "ev-chargers",
+    "renewable-energy",
+    "installation"
+  ],
+  "author": "Martin Rees Energy Solutions",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
