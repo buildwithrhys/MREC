@@ -39,6 +39,24 @@
     
     <!-- EmailJS for contact form functionality -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+    
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
 </head>
 <body>
     <!-- Navigation -->
@@ -46,16 +64,28 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.html" class="logo-link">
-                    <h2>Martin Rees</h2>
-                    <span>Electrical Contractors</span>
+                    <img src="images/logo.png" alt="Martin Rees Electrical Contractors" class="logo-image">
                 </a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#services" class="nav-link">Services</a>
+                <div class="nav-dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="domestic.html" class="dropdown-item">Domestic</a>
+                        <a href="industrial.html" class="dropdown-item">Industrial</a>
+                        <a href="commercial.html" class="dropdown-item">Commercial</a>
+                        <a href="agriculture.html" class="dropdown-item">Agriculture</a>
+                        <a href="public-sector.html" class="dropdown-item">Public Sector</a>
+                        <a href="new-build.html" class="dropdown-item">New Build</a>
+                        <a href="letting-agents.html" class="dropdown-item">Letting Agents</a>
+                        <a href="solar.html" class="dropdown-item">Solar & Battery</a>
+                        <a href="ev-chargers.html" class="dropdown-item">EV Chargers</a>
+                    </div>
+                </div>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="tel:01550721198" class="nav-link phone-nav">Call: 01550 721198</a>
+                <a href="#contact" class="nav-link phone-nav">Enquire Now</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -68,6 +98,10 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
+            <div class="lightning-1"></div>
+            <div class="lightning-2"></div>
+            <div class="lightning-3"></div>
+            <div class="lightning-4"></div>
             <div class="hero-content">
                 <h1 class="hero-title">
                     Martin Rees Electrical Contractors Ltd
@@ -77,7 +111,7 @@
                     The largest qualified, professional electrical contractor in Mid & South Wales. We provide electrical services to schools, offices, hospitals, industrial estates and private housing, with a reputation for professional approach and reliability.
                 </p>
                 <div class="hero-buttons">
-                    <a href="tel:01550721198" class="btn btn-primary">Call Now: 01550 721198</a>
+                    <a href="tel:01550721198" class="btn btn-primary">Call: 01550 721198</a>
                     <a href="#contact" class="btn btn-secondary">Get Free Quote</a>
                 </div>
             </div>
@@ -280,6 +314,71 @@
         </div>
     </section>
 
+    <!-- Accreditations Section -->
+    <section class="accreditations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Accreditations & Certifications</h2>
+                <p>Professional standards you can trust</p>
+            </div>
+            <div class="accreditations-intro">
+                <p>Our accreditations demonstrate our commitment to the highest standards of electrical workmanship, safety, and customer service. These certifications provide you with peace of mind, ensuring that your electrical installations meet all regulatory requirements and industry best practices.</p>
+            </div>
+            <div class="accreditations-grid">
+                <div class="accreditation-item">
+                    <img src="images/nic.jpg" alt="NICEIC Certification" class="accreditation-logo">
+                    <h3>NICEIC Certified</h3>
+                    <p class="accreditation-description">Approved contractor for electrical installations</p>
+                </div>
+                <div class="accreditation-item">
+                    <img src="images/rea.png" alt="REA Accreditation" class="accreditation-logo">
+                    <h3>REA Member</h3>
+                    <p class="accreditation-description">Renewable Energy Association member</p>
+                </div>
+                <div class="accreditation-item">
+                    <img src="images/mcs.png" alt="MCS Certification" class="accreditation-logo">
+                    <h3>MCS Certified</h3>
+                    <p class="accreditation-description">Microgeneration Certification Scheme approved</p>
+                </div>
+                <div class="accreditation-item">
+                    <img src="images/ukas.jpg" alt="UKAS Accreditation" class="accreditation-logo">
+                    <h3>UKAS Accredited</h3>
+                    <p class="accreditation-description">United Kingdom Accreditation Service</p>
+                </div>
+                <div class="accreditation-item">
+                    <img src="images/trustmark.jpg" alt="TrustMark" class="accreditation-logo">
+                    <h3>TrustMark</h3>
+                    <p class="accreditation-description">Government endorsed quality scheme</p>
+                </div>
+            </div>
+            <div class="accreditations-summary">
+                <h3>Why These Accreditations Matter to You</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Safety Guaranteed</h4>
+                        <p>All our work meets strict safety standards and regulatory requirements</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-pound-sign"></i>
+                        <h4>Financial Benefits</h4>
+                        <p>Access to government incentives and energy savings through certified installations</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-award"></i>
+                        <h4>Quality Assured</h4>
+                        <p>Independent verification of our technical competence and customer service</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Peace of Mind</h4>
+                        <p>Comprehensive warranties and ongoing support backed by industry recognition</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -312,10 +411,7 @@
                         </div>
                     </div>
 
-                    <div class="about-services">
-                        <h3>Comprehensive Service Coverage</h3>
-                        <p>We serve diverse markets including schools, offices, hospitals, industrial estates, and private housing. Our expertise extends from traditional electrical installations to cutting-edge renewable energy systems, with full testing and commissioning capabilities.</p>
-                    </div>
+
 
                     <div class="about-commitment">
                         <h3>Our Commitment to You</h3>
@@ -338,7 +434,8 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="about-right">
                     <div class="about-stats">
                         <div class="stat">
                             <h3>30+</h3>
@@ -353,11 +450,10 @@
                             <p>Customer Satisfaction</p>
                         </div>
                     </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-solar-panel"></i>
-                        <p>Professional Installation</p>
+                    
+                    <div class="about-services">
+                        <h3>Comprehensive Service Coverage</h3>
+                        <p>We serve diverse markets including schools, offices, hospitals, industrial estates, and private housing. Our expertise extends from traditional electrical installations to cutting-edge renewable energy systems, with full testing and commissioning capabilities.</p>
                     </div>
                 </div>
             </div>
@@ -380,16 +476,19 @@
                         <div>
                             <h3>Call Us Now</h3>
                             <p><a href="tel:01550721198" class="phone-link">01550 721198</a></p>
+                            <p><a href="tel:07774142327" class="phone-link">07774 142 327</a></p>
                             <p>Available for quotes and consultations</p>
                         </div>
                     </div>
+
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fab fa-google"></i>
                         </div>
                         <div>
-                            <h3>Email Us</h3>
-                            <p>Get detailed information and quotes</p>
+                            <h3>Google Reviews</h3>
+                            <p>See what our customers say about us</p>
+                            <a href="https://share.google/5FNl8ll5FSWkAFlsa" target="_blank" class="google-link">View Reviews & Photos</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -397,8 +496,14 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div>
-                            <h3>Service Area</h3>
-                            <p>We cover the whole of Mid and South Wales</p>
+                            <h3>Our Address</h3>
+                            <p>Martin Rees Electrical Contractors Ltd<br>
+                            Brewery Field<br>
+                            Victoria Crescent<br>
+                            Llandovery<br>
+                            Carmarthenshire<br>
+                            SA20 0YE</p>
+                            <a href="https://maps.google.com/?q=Martin+Rees+Electrical+Contractors+Ltd+Brewery+Field+Victoria+Crescent+Llandovery+SA20+0YE" target="_blank" class="map-link">View on Google Maps</a>
                         </div>
                     </div>
                 </div>
@@ -432,6 +537,7 @@
                         <div class="form-group">
                             <textarea id="message" name="message" placeholder="Tell us about your project" rows="4"></textarea>
                         </div>
+
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
@@ -464,8 +570,21 @@
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <p><a href="tel:01550721198" class="phone-link">01550 721198</a></p>
+                    <p><a href="tel:07774142327" class="phone-link">07774 142 327</a></p>
+                    <p><strong>Address:</strong><br>
+                    Martin Rees Electrical Contractors Ltd<br>
+                    Brewery Field<br>
+                    Victoria Crescent<br>
+                    Llandovery<br>
+                    Carmarthenshire<br>
+                    SA20 0YE</p>
                     <p>Ready to get started?</p>
                     <a href="#contact" class="btn btn-primary">Get Quote</a>
+                    <p style="margin-top: 1rem;">
+                        <a href="https://share.google/5FNl8ll5FSWkAFlsa" target="_blank" class="google-link">
+                            <i class="fab fa-google"></i> Read Our Reviews
+                        </a>
+                    </p>
                 </div>
             </div>
             <div class="footer-bottom">
